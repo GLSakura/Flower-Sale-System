@@ -1,25 +1,15 @@
 <?php
-session_start();
 include "connectSQL.php";
+include "header.php";
 $id = $_GET['id'];
 $sql = "select * from goods where GoodId='$id'";
 if ($result = mysqli_query($coon, $sql)) {
     $row = mysqli_fetch_assoc($result);
     $data[] = $row;
-} else
+} else {
     $data = array();
-//$num=mysqli_num_rows($result);
-$sql1 = "select * from globaldescription";
-if ($result1 = mysqli_query($coon, $sql1)) {
-    $row1 = mysqli_fetch_assoc($result1);
-    $data1[] = $row1;
 }
-$user = $_SESSION['user'];
-if ($user != '') {
-    $sql1 = "select * from users where UserName='$user'";
-    $result1 = mysqli_query($coon, $sql1);
-    $row1 = mysqli_fetch_assoc($result1);
-}
+
 $sql3 = "select * from comments where GoodId='$id'";
 if ($result3 = mysqli_query($coon, $sql3)) {
     while ($row3 = mysqli_fetch_assoc($result3))
@@ -28,21 +18,7 @@ if ($result3 = mysqli_query($coon, $sql3)) {
     $data3 = array();
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>法兰沃----懂你的心</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
-    <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/allset.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/fontawesome-all.css">
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-</head>
-<?php include "header.php"; ?>
+
 <div class="row">
     <?php
     if (!empty($data)) {
@@ -52,9 +28,6 @@ if ($result3 = mysqli_query($coon, $sql3)) {
                 <div><?php $imagepath = "./" . $value['GoodImage'];
                     echo "<a href='#'><img class='img-rounded' style='width: 50%;height: 50%;margin-left: 180px;' src='$imagepath'></a>"; ?></div>
                 <br><br>
-                <div><?php $imagepath = "./images/goodImages/" . $value['GoodName'] . "-2.jpg";
-                    echo "<a href='#'><img class='img-rounded' style='width: 50%;height: 50%;margin-left: 180px;' src='$imagepath'></a>"; ?></div>
-                <br><br>
                 <h3>商品评论</h3><br>
                 <?php
                 if (!empty($data3)) {
@@ -62,8 +35,7 @@ if ($result3 = mysqli_query($coon, $sql3)) {
                         ?>
                         <table class="table">
                             <tr>
-                                <td style="font-weight: bold;" colspan="2"><span><?php echo $value3['Time']; ?></span>
-                                </td>
+                                <td style="font-weight: bold;" colspan="2"><span><?php echo $value3['Time']; ?></span></td>
                             </tr>
                             <tr>
                                 <td style="width: 70px;font-weight: bold;">
@@ -74,11 +46,7 @@ if ($result3 = mysqli_query($coon, $sql3)) {
                         <br>
                         <?php
                     }
-                } else
-                    ?>
-                    <span>该商品评论为空</span><br><br>
-                    <?php
-                ?>
+                } ?>
                 <form action="commentAddHandle.php" method="post">
                     <h4>写下你的评论</h4>
                     <textarea style="resize: none;" name="comment" cols="90" rows="6"

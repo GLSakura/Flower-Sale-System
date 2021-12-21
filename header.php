@@ -1,7 +1,46 @@
+<?php
+session_start();
+$order = ($_GET['order'] != '') ? $_GET['order'] : '';
+$user = $_SESSION['user'];
+$str1 = $_SESSION['user'];
+if ($user != '') {
+    $sql1 = "select * from users where UserName='$user'";
+    $result1 = mysqli_query($coon, $sql1);
+    $row1 = mysqli_fetch_assoc($result1);
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>和音----懂你的心</title>
+    <link rel="icon" type="text/css" href="./images/logo.ico">
+    <link rel="stylesheet" href="styles/index-style.css">
+    <link rel="stylesheet" href="styles/allset.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/fontawesome-all.css">
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <style>
+        hr {
+            margin: 10px 0;
+        }
+
+        input:disabled {
+            text-decoration: none;
+            border: 0;
+            background-color: white;
+        }
+        span:hover {
+            cursor: pointer
+        }
+    </style>
+</head>
 <body style="margin: 0 auto;">
 <div class="content">
     <div class="row" style="margin-top: 20px;">
-        <div class="col-md-4" style="margin-top: 30px;">欢迎来到法兰沃鲜花购物网站!
+        <div class="col-md-4" style="margin-top: 30px;">欢迎来到和音鲜花购物网站!
             <?php
             if ($_SESSION['user'] == "")
                 echo "<a class='btn btn-success btn-xs' href='login.php'>登录</a>" . "&nbsp;&nbsp;&nbsp;<a class='btn btn-info btn-xs'  href='register.php'>注册</a>";
@@ -11,7 +50,7 @@
             ?>
         </div>
         <div class="col-md-5">
-            <img src="./images/title-logo.jpg" alt="法兰沃">
+            <img src="./images/title-logo.jpg" alt="和音">
         </div>
         <div class="col-md-3" style="margin-top: 30px;padding-left: 150px;">
             <a class="" href="shoppingCart.php" style="font-size: 15px;text-decoration: none;color: black;">查看购物车

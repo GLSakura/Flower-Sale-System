@@ -1,6 +1,6 @@
 <?php
 include "connectSQL.php";
-session_start();
+include "header.php";
 $data = array();
 $cartlist = array();
 if (!empty($_SESSION['cartlist'])) {
@@ -21,9 +21,6 @@ class good
     }
 }
 
-//echo sizeof($_SESSION['cartlist']);
-//echo sizeof($cartlist);
-//print_r($cartlist);
 for ($i = 0; $i < sizeof($cartlist); $i++) {
     $str = $cartlist[$i]->goodid;
     $sql = "select * from goods where GoodId='$str'";
@@ -31,42 +28,8 @@ for ($i = 0; $i < sizeof($cartlist); $i++) {
     $row = mysqli_fetch_assoc($result);
     $data[$i] = $row;
 }
-//if(!empty($arr)) {
-//    foreach ($arr as $value) {
-//        echo $value['GoodId'].floatval($value['GoodPrice1']);
-//    }
-//}
-//判断登录用户是否为VIP
-$str1 = $_SESSION['user'];
-$sql1 = "select * from users where UserName='$str1'";
-$result1 = mysqli_query($coon, $sql1);
-$row1 = mysqli_fetch_assoc($result1);
-//if (!empty($result1))
-//    echo "<script>alert('查询VIP结果不为空.');</script>";
-//echo ($row1['IsVIP']+1);
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的购物车</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
-    <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/allset.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/fontawesome-all.css">
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-    <script src="scripts/cartHandle.js"></script>
-    <style>
-        span:hover {
-            cursor: pointer
-        }
-    </style>
-</head>
-<?php include "header.php"; ?>
 <form role="form" action="calculate.php" method="post">
     <table id="cartTable" class="table  table-hover">
         <thead>

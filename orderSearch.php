@@ -1,7 +1,6 @@
 <?php
 include "connectSQL.php";
-session_start();
-$user = $_SESSION['user'];
+include "header.php";
 $ordersearch = $_POST['ordersearch'];
 if ($ordersearch != '')
     $sql = "select * from orders where UserName='$user' and OrderId='$ordersearch' order by OrderTime desc";
@@ -15,33 +14,10 @@ while ($row = mysqli_fetch_assoc($result)) {
     $data[] = $row;
 }
 for ($i = 0; $i < sizeof($data); $i++) {
-//    echo $data[$i]['Goods'];
     $orderlist[$i] = explode("|", $data[$i]['Goods']);
-//    var_dump(sizeof($orderlist[$i]));
-//    var_dump($orderlist[$i]);
-//    var_dump('<br>');
-}
-if ($user != '') {
-    $sql2 = "select * from users where UserName='$user'";
-    $result2 = mysqli_query($coon, $sql2);
-    $row2 = mysqli_fetch_assoc($result2);
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>法兰沃----懂你的心</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
-    <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/allset.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/fontawesome-all.css">
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-</head>
-<?php include "header.php"; ?>
+
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -71,14 +47,10 @@ for ($i = 0; $i < sizeof($orderlist); $i++) {
         <?php
         for ($j = 0; $j < sizeof($orderlist[$i]); $j++) {
             $goodlist[$j] = explode(",", $orderlist[$i][$j]);
-            //        var_dump($goodlist[$j]);
-            //        var_dump('<br>');
             $str = $goodlist[$j][0];
             $sql1 = "select * from goods where GoodId='$str'";
             $result1 = mysqli_query($coon, $sql1);
             $row1 = mysqli_fetch_assoc($result1);
-//    echo $row1['GoodName'];
-//    var_dump('<br>');
             ?>
             <tr>
                 <td style="width: 30%;"><?php $imagepath = "./" . $row1['GoodImage'];

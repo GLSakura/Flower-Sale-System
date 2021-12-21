@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/8
- * Time: 13:41
- */
+header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";     //调用数据库连接文件
 include "goodImageUpload.php";
 $IsRegister=0;//确认用户名是否被注册

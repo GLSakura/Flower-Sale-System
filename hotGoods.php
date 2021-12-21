@@ -1,8 +1,7 @@
 <?php
 include "connectSQL.php";
+include "header.php";
 //$sql="select * from goods";
-session_start();
-$order = $_GET['order'];
 switch ($order) {
     case '':
     case 'default':
@@ -34,29 +33,7 @@ if ($result = mysqli_query($coon, $sql)) {
 } else
     $data = array();
 $num = mysqli_num_rows($result);
-$user = $_SESSION['user'];
-if ($user != '') {
-    $sql1 = "select * from users where UserName='$user'";
-    $result1 = mysqli_query($coon, $sql1);
-    $row1 = mysqli_fetch_assoc($result1);
-}
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>法兰沃----懂你的心</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
-    <link rel="stylesheet" href="styles/index-style.css">
-    <link rel="stylesheet" href="styles/allset.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/fontawesome-all.css">
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-</head>
-<?php include "header.php"; ?>
 <div class="panel panel-default">
     <div class="panel-body search-firstline">
         <span style="float: left;line-height: 20px;margin-left: 30px;margin-right: 20px;">排序</span>

@@ -1,5 +1,5 @@
 <?php
-header("content-type:text/html;charset=utf-8");  //设置页面内容是html  编码是utf-8 //屏蔽错误信息
+header("content-type:text/html;charset=utf-8");
 include 'connectSQL.php';     //调用数据库连接文件
 $IsRegister = 0;//确认用户名是否被注册
 //接收前台传递过来的post值

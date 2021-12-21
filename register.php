@@ -12,7 +12,7 @@
 <body style="margin: 0 auto;background-image: url('images/Login-background.png');background-repeat:no-repeat; -webkit-background-size: 100%;background-size: 100%;">
 <div class="content">
     <div class="title">
-        <div class="title-left">欢迎来到法兰沃鲜花购物网站!
+        <div class="title-left">欢迎来到和音鲜花购物网站!
             <?php
             session_start();
             if ($_SESSION['user'] == "")
@@ -25,7 +25,7 @@
         </div>
 
         <div class="title-logo">
-            <img src="./images/title-logo.jpg" alt="法兰沃">
+            <img src="./images/title-logo.jpg" alt="和音">
         </div>
     </div>
     <hr style="height: 2px;background-color: black;border: 1px solid black;">

@@ -1,116 +1,73 @@
 ﻿<?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/7
- * Time: 20:22
- */
 include "connectSQL.php";
+include "header_admin.php";
 session_start();
-$sql_sold="select * from goods order by SoldNumber desc ";
-$sql_rest="select * from goods order by GoodNumber desc ";
-$sql_user="select * from users where ConsumeNum!=0 order by ConsumeNum desc ";
-$sql_flower_sold="select * from flowers order by SoldNumber desc ";
-$sql_flower_rest="select * from flowers order by FlowerNumber desc ";
-$sql_flower_profit="select * from flowers order by SoldProfit desc ";
-if($result=mysqli_query($coon,$sql_sold)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_sold[]=$row;
+$sql_sold = "select * from goods order by SoldNumber desc ";
+$sql_rest = "select * from goods order by GoodNumber desc ";
+$sql_user = "select * from users where ConsumeNum!=0 order by ConsumeNum desc ";
+$sql_flower_sold = "select * from flowers order by SoldNumber desc ";
+$sql_flower_rest = "select * from flowers order by FlowerNumber desc ";
+$sql_flower_profit = "select * from flowers order by SoldProfit desc ";
+if ($result = mysqli_query($coon, $sql_sold)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_sold[] = $row;
     }
-}
-else
-    $data_sold=array();
-if($result=mysqli_query($coon,$sql_rest)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_rest[]=$row;
+} else
+    $data_sold = array();
+if ($result = mysqli_query($coon, $sql_rest)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_rest[] = $row;
     }
-}
-else
-    $data_rest=array();
-if($result=mysqli_query($coon,$sql_user)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_user[]=$row;
+} else
+    $data_rest = array();
+if ($result = mysqli_query($coon, $sql_user)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_user[] = $row;
     }
-}
-else
-    $data_user=array();
-if($result=mysqli_query($coon,$sql_flower_sold)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_flower_sold[]=$row;
+} else
+    $data_user = array();
+if ($result = mysqli_query($coon, $sql_flower_sold)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_flower_sold[] = $row;
     }
-}
-else
-    $data_flower_sold=array();
-if($result=mysqli_query($coon,$sql_flower_rest)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_flower_rest[]=$row;
+} else
+    $data_flower_sold = array();
+if ($result = mysqli_query($coon, $sql_flower_rest)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_flower_rest[] = $row;
     }
-}
-else
-    $data_flower_rest=array();
-if($result=mysqli_query($coon,$sql_flower_profit)){
-    while ($row = mysqli_fetch_assoc($result)){
-        $data_flower_profit[]=$row;
+} else
+    $data_flower_rest = array();
+if ($result = mysqli_query($coon, $sql_flower_profit)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data_flower_profit[] = $row;
     }
-}
-else
-    $data_flower_profit=array();
+} else
+    $data_flower_profit = array();
 ?>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>后台管理系统</title>
-    <link rel="icon" type="text/css" href="../images/logo.ico">
-    <link rel="stylesheet" href="../styles/index-style.css">
-    <link rel="stylesheet" href="../styles/allset.css">
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <script src="../scripts/bootstrap.min.js"></script>
-    <script src="../scripts/bootstrap.js"></script>
-    <script src="../scripts/jquery-3.3.1.min.js"></script>
-    <script src="../scripts/highcharts.js"></script>
-</head>
-<body style="margin: 0 auto;">
-<div class="container">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h1 style="display: inline;">鲜花销售后台管理系统</h1>
-            <?php
-            if($_SESSION['user']=="")
-                echo "<script>alert('请您先登录系统！即将跳转到登录页面。。。');window.location.href='../login.php';</script>";
-            else {
-                echo "<p class='text-right' style='float: right;display: inline;margin-top: 10px;'>欢迎您，" . $_SESSION['user'] . "！  " . "<a class='btn btn-danger btn-xs'  href='../loginOut.php'>退出登录</a>" . "</p>";
-            }
-            ?>
-        </div>
-    </div>
-    <div class="navbar navbar-default">
-        <ul class="nav nav-pills navbar-nav">
-            <li><a href="manage.php">首页</a></li>
-            <li><a href="userManager.php">用户管理</a></li>
-            <li><a href="goodManager.php">商品管理</a></li>
-            <li><a href="orderManager.php">订单管理</a></li>
-            <li><a href="commentManager.php">评论管理</a></li>
-            <li><a href="sizeManager.php">规格配置</a></li>
-            <li class="active"><a href="soldAnalysis.php">销售分析</a></li>
-        </ul>
-    </div>
+
+<div class="navbar navbar-default">
+    <ul class="nav nav-pills navbar-nav">
+        <li><a href="manage.php">首页</a></li>
+        <li><a href="userManager.php">用户管理</a></li>
+        <li><a href="goodManager.php">商品管理</a></li>
+        <li><a href="orderManager.php">订单管理</a></li>
+        <li><a href="commentManager.php">评论管理</a></li>
+        <li><a href="sizeManager.php">规格配置</a></li>
+        <li class="active"><a href="soldAnalysis.php">销售分析</a></li>
+    </ul>
 </div>
-<!--
-*************************************************************************
-   Generated by HCODE at 2018-04-29 17:38:53
-   From: https://code.hcharts.cn/temp/SCIQob
-*************************************************************************
- -->
+</div>
+
 <div id="container-sold"></div>
 <pre hidden id="csv_sold"><?php
-    echo "分类,商品名称".PHP_EOL;
-    if(!empty($data_sold)){
-        for($i=0;$i<sizeof($data_sold);$i++){
-            if ($i==sizeof($data_sold)-1)
-                echo $data_sold[$i]['GoodName'].','.$data_sold[$i]['SoldNumber'];
+    echo "分类,商品名称" . PHP_EOL;
+    if (!empty($data_sold)) {
+        for ($i = 0; $i < sizeof($data_sold); $i++) {
+            if ($i == sizeof($data_sold) - 1)
+                echo $data_sold[$i]['GoodName'] . ',' . $data_sold[$i]['SoldNumber'];
             else
-                echo $data_sold[$i]['GoodName'].','.$data_sold[$i]['SoldNumber'].PHP_EOL;
+                echo $data_sold[$i]['GoodName'] . ',' . $data_sold[$i]['SoldNumber'] . PHP_EOL;
         }
 //        foreach ($data as $value){
 //            echo $value['GoodName'].','.$value['SoldNumber'].PHP_EOL;
@@ -121,13 +78,13 @@ else
 <br><br>
 <div id="container-rest"></div>
 <pre hidden id="csv_rest"><?php
-    echo "分类,商品名称".PHP_EOL;
-    if(!empty($data_rest)){
-        for($i=0;$i<sizeof($data_rest);$i++){
-            if ($i==sizeof($data_rest)-1)
-                echo $data_rest[$i]['GoodName'].','.$data_rest[$i]['GoodNumber'];
+    echo "分类,商品名称" . PHP_EOL;
+    if (!empty($data_rest)) {
+        for ($i = 0; $i < sizeof($data_rest); $i++) {
+            if ($i == sizeof($data_rest) - 1)
+                echo $data_rest[$i]['GoodName'] . ',' . $data_rest[$i]['GoodNumber'];
             else
-                echo $data_rest[$i]['GoodName'].','.$data_rest[$i]['GoodNumber'].PHP_EOL;
+                echo $data_rest[$i]['GoodName'] . ',' . $data_rest[$i]['GoodNumber'] . PHP_EOL;
         }
 //        foreach ($data as $value){
 //            echo $value['GoodName'].','.$value['SoldNumber'].PHP_EOL;
@@ -138,13 +95,13 @@ else
 <br><br>
 <div id="container-flower-sold"></div>
 <pre hidden id="csv_flower_sold"><?php
-    echo "分类,鲜花名称".PHP_EOL;
-    if(!empty($data_flower_sold)){
-        for($i=0;$i<sizeof($data_flower_sold);$i++){
-                if ($i==sizeof($data_flower_sold)-1)
-                    echo $data_flower_sold[$i]['FlowerName'].','.$data_flower_sold[$i]['SoldNumber'];
-                else
-                    echo $data_flower_sold[$i]['FlowerName'].','.$data_flower_sold[$i]['SoldNumber'].PHP_EOL;
+    echo "分类,鲜花名称" . PHP_EOL;
+    if (!empty($data_flower_sold)) {
+        for ($i = 0; $i < sizeof($data_flower_sold); $i++) {
+            if ($i == sizeof($data_flower_sold) - 1)
+                echo $data_flower_sold[$i]['FlowerName'] . ',' . $data_flower_sold[$i]['SoldNumber'];
+            else
+                echo $data_flower_sold[$i]['FlowerName'] . ',' . $data_flower_sold[$i]['SoldNumber'] . PHP_EOL;
         }
     }
     ?>
@@ -152,13 +109,13 @@ else
 <br><br>
 <div id="container-flower-rest"></div>
 <pre hidden id="csv_flower_rest"><?php
-    echo "分类,鲜花名称".PHP_EOL;
-    if(!empty($data_flower_rest)){
-        for($i=0;$i<sizeof($data_flower_rest);$i++){
-                if ($i==sizeof($data_flower_rest)-1)
-                    echo $data_flower_rest[$i]['FlowerName'].','.$data_flower_rest[$i]['FlowerNumber'];
-                else
-                    echo $data_flower_rest[$i]['FlowerName'].','.$data_flower_rest[$i]['FlowerNumber'].PHP_EOL;
+    echo "分类,鲜花名称" . PHP_EOL;
+    if (!empty($data_flower_rest)) {
+        for ($i = 0; $i < sizeof($data_flower_rest); $i++) {
+            if ($i == sizeof($data_flower_rest) - 1)
+                echo $data_flower_rest[$i]['FlowerName'] . ',' . $data_flower_rest[$i]['FlowerNumber'];
+            else
+                echo $data_flower_rest[$i]['FlowerName'] . ',' . $data_flower_rest[$i]['FlowerNumber'] . PHP_EOL;
         }
     }
     ?>
@@ -166,13 +123,13 @@ else
 <br><br>
 <div id="container-flower-profit"></div>
 <pre hidden id="csv_flower_profit"><?php
-    echo "分类,鲜花名称".PHP_EOL;
-    if(!empty($data_flower_profit)){
-        for($i=0;$i<sizeof($data_flower_profit);$i++){
-            if ($i==sizeof($data_flower_profit)-1)
-                echo $data_flower_profit[$i]['FlowerName'].','.$data_flower_profit[$i]['SoldProfit'];
+    echo "分类,鲜花名称" . PHP_EOL;
+    if (!empty($data_flower_profit)) {
+        for ($i = 0; $i < sizeof($data_flower_profit); $i++) {
+            if ($i == sizeof($data_flower_profit) - 1)
+                echo $data_flower_profit[$i]['FlowerName'] . ',' . $data_flower_profit[$i]['SoldProfit'];
             else
-                echo $data_flower_profit[$i]['FlowerName'].','.$data_flower_profit[$i]['SoldProfit'].PHP_EOL;
+                echo $data_flower_profit[$i]['FlowerName'] . ',' . $data_flower_profit[$i]['SoldProfit'] . PHP_EOL;
         }
     }
     ?>
@@ -180,13 +137,13 @@ else
 <br><br>
 <div id="container-user"></div>
 <pre hidden id="csv_user"><?php
-    echo "分类,用户名".PHP_EOL;
-    if(!empty($data_user)){
-        for($i=0;$i<sizeof($data_user);$i++){
-            if ($i==sizeof($data_user)-1)
-                echo $data_user[$i]['UserName'].','.$data_user[$i]['ConsumeNum'];
+    echo "分类,用户名" . PHP_EOL;
+    if (!empty($data_user)) {
+        for ($i = 0; $i < sizeof($data_user); $i++) {
+            if ($i == sizeof($data_user) - 1)
+                echo $data_user[$i]['UserName'] . ',' . $data_user[$i]['ConsumeNum'];
             else
-                echo $data_user[$i]['UserName'].','.$data_user[$i]['ConsumeNum'].PHP_EOL;
+                echo $data_user[$i]['UserName'] . ',' . $data_user[$i]['ConsumeNum'] . PHP_EOL;
         }
     }
     ?>
@@ -213,11 +170,11 @@ else
         var csvData = document.getElementById('csv_sold').innerHTML;
         var lines = csvData.split('\n');
         // 遍历每一行
-        Highcharts.each(lines, function(line, lineNo) {
+        Highcharts.each(lines, function (line, lineNo) {
             var items = line.split(',');
             // 处理第一行，即分类
             if (lineNo === 0) {
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo > 0) {
                         options.xAxis.categories.push(item);
                     }
@@ -228,7 +185,7 @@ else
                 var series = {
                     data: []
                 };
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo === 0) {
                         series.name = item;   // 数据列的名字
                     } else {
@@ -242,6 +199,7 @@ else
         // 创建图表
         var chart_sold = new Highcharts.Chart('container-sold', options);
     }
+
     function createchart_rest() {
         var options = {
             chart: {
@@ -263,11 +221,11 @@ else
         var csvData = document.getElementById('csv_rest').innerHTML;
         var lines = csvData.split('\n');
         // 遍历每一行
-        Highcharts.each(lines, function(line, lineNo) {
+        Highcharts.each(lines, function (line, lineNo) {
             var items = line.split(',');
             // 处理第一行，即分类
             if (lineNo === 0) {
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo > 0) {
                         options.xAxis.categories.push(item);
                     }
@@ -278,7 +236,7 @@ else
                 var series = {
                     data: []
                 };
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo === 0) {
                         series.name = item;   // 数据列的名字
                     } else {
@@ -292,7 +250,8 @@ else
         // 创建图表
         var chart_sold = new Highcharts.Chart('container-rest', options);
     }
-    function createchart_user(){
+
+    function createchart_user() {
         var options = {
             chart: {
                 type: 'column'
@@ -313,11 +272,11 @@ else
         var csvData = document.getElementById('csv_user').innerHTML;
         var lines = csvData.split('\n');
         // 遍历每一行
-        Highcharts.each(lines, function(line, lineNo) {
+        Highcharts.each(lines, function (line, lineNo) {
             var items = line.split(',');
             // 处理第一行，即分类
             if (lineNo === 0) {
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo > 0) {
                         options.xAxis.categories.push(item);
                     }
@@ -328,7 +287,7 @@ else
                 var series = {
                     data: []
                 };
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo === 0) {
                         series.name = item;   // 数据列的名字
                     } else {
@@ -342,106 +301,109 @@ else
         // 创建图表
         var chart_sold = new Highcharts.Chart('container-user', options);
     }
+
     function createchart_flower_sold() {
-            var options = {
-                chart: {
-                    type: 'column'
-                },
+        var options = {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '鲜花已销售情况'
+            },
+            xAxis: {
+                categories: []
+            },
+            yAxis: {
                 title: {
-                    text: '鲜花已销售情况'
-                },
-                xAxis: {
-                    categories: []
-                },
-                yAxis: {
-                    title: {
-                        text: '销售量（/件）'
+                    text: '销售量（/件）'
+                }
+            },
+            series: []
+        };
+        var csvData = document.getElementById('csv_flower_sold').innerHTML;
+        var lines = csvData.split('\n');
+        // 遍历每一行
+        Highcharts.each(lines, function (line, lineNo) {
+            var items = line.split(',');
+            // 处理第一行，即分类
+            if (lineNo === 0) {
+                Highcharts.each(items, function (item, itemNo) {
+                    if (itemNo > 0) {
+                        options.xAxis.categories.push(item);
                     }
-                },
-                series: []
-            };
-            var csvData = document.getElementById('csv_flower_sold').innerHTML;
-            var lines = csvData.split('\n');
-            // 遍历每一行
-            Highcharts.each(lines, function(line, lineNo) {
-                var items = line.split(',');
-                // 处理第一行，即分类
-                if (lineNo === 0) {
-                    Highcharts.each(items, function(item, itemNo) {
-                        if (itemNo > 0) {
-                            options.xAxis.categories.push(item);
-                        }
-                    });
-                }
-                // 处理其他的每一行
-                else {
-                    var series = {
-                        data: []
-                    };
-                    Highcharts.each(items, function(item, itemNo) {
-                        if (itemNo === 0) {
-                            series.name = item;   // 数据列的名字
-                        } else {
-                            series.data.push(parseFloat(item)); // 数据，记得转换成数值类型
-                        }
-                    });
-                    // 最后将数据 push 到数据列配置里
-                    options.series.push(series);
-                }
-            });
-            // 创建图表
-            var chart_flower_sold = new Highcharts.Chart('container-flower-sold', options);
-        }
+                });
+            }
+            // 处理其他的每一行
+            else {
+                var series = {
+                    data: []
+                };
+                Highcharts.each(items, function (item, itemNo) {
+                    if (itemNo === 0) {
+                        series.name = item;   // 数据列的名字
+                    } else {
+                        series.data.push(parseFloat(item)); // 数据，记得转换成数值类型
+                    }
+                });
+                // 最后将数据 push 到数据列配置里
+                options.series.push(series);
+            }
+        });
+        // 创建图表
+        var chart_flower_sold = new Highcharts.Chart('container-flower-sold', options);
+    }
+
     function createchart_flower_rest() {
-            var options = {
-                chart: {
-                    type: 'column'
-                },
+        var options = {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '鲜花库存情况'
+            },
+            xAxis: {
+                categories: []
+            },
+            yAxis: {
                 title: {
-                    text: '鲜花库存情况'
-                },
-                xAxis: {
-                    categories: []
-                },
-                yAxis: {
-                    title: {
-                        text: '库存量（/件）'
+                    text: '库存量（/件）'
+                }
+            },
+            series: []
+        };
+        var csvData = document.getElementById('csv_flower_rest').innerHTML;
+        var lines = csvData.split('\n');
+        // 遍历每一行
+        Highcharts.each(lines, function (line, lineNo) {
+            var items = line.split(',');
+            // 处理第一行，即分类
+            if (lineNo === 0) {
+                Highcharts.each(items, function (item, itemNo) {
+                    if (itemNo > 0) {
+                        options.xAxis.categories.push(item);
                     }
-                },
-                series: []
-            };
-            var csvData = document.getElementById('csv_flower_rest').innerHTML;
-            var lines = csvData.split('\n');
-            // 遍历每一行
-            Highcharts.each(lines, function(line, lineNo) {
-                var items = line.split(',');
-                // 处理第一行，即分类
-                if (lineNo === 0) {
-                    Highcharts.each(items, function(item, itemNo) {
-                        if (itemNo > 0) {
-                            options.xAxis.categories.push(item);
-                        }
-                    });
-                }
-                // 处理其他的每一行
-                else {
-                    var series = {
-                        data: []
-                    };
-                    Highcharts.each(items, function(item, itemNo) {
-                        if (itemNo === 0) {
-                            series.name = item;   // 数据列的名字
-                        } else {
-                            series.data.push(parseFloat(item)); // 数据，记得转换成数值类型
-                        }
-                    });
-                    // 最后将数据 push 到数据列配置里
-                    options.series.push(series);
-                }
-            });
-            // 创建图表
-            var chart_flower_rest = new Highcharts.Chart('container-flower-rest', options);
-        }
+                });
+            }
+            // 处理其他的每一行
+            else {
+                var series = {
+                    data: []
+                };
+                Highcharts.each(items, function (item, itemNo) {
+                    if (itemNo === 0) {
+                        series.name = item;   // 数据列的名字
+                    } else {
+                        series.data.push(parseFloat(item)); // 数据，记得转换成数值类型
+                    }
+                });
+                // 最后将数据 push 到数据列配置里
+                options.series.push(series);
+            }
+        });
+        // 创建图表
+        var chart_flower_rest = new Highcharts.Chart('container-flower-rest', options);
+    }
+
     function createchart_flower_profit() {
         var options = {
             chart: {
@@ -463,11 +425,11 @@ else
         var csvData = document.getElementById('csv_flower_profit').innerHTML;
         var lines = csvData.split('\n');
         // 遍历每一行
-        Highcharts.each(lines, function(line, lineNo) {
+        Highcharts.each(lines, function (line, lineNo) {
             var items = line.split(',');
             // 处理第一行，即分类
             if (lineNo === 0) {
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo > 0) {
                         options.xAxis.categories.push(item);
                     }
@@ -478,7 +440,7 @@ else
                 var series = {
                     data: []
                 };
-                Highcharts.each(items, function(item, itemNo) {
+                Highcharts.each(items, function (item, itemNo) {
                     if (itemNo === 0) {
                         series.name = item;   // 数据列的名字
                     } else {
@@ -492,6 +454,7 @@ else
         // 创建图表
         var chart_sold = new Highcharts.Chart('container-flower-profit', options);
     }
+
     createchart_sold();
     createchart_rest();
     createchart_user();

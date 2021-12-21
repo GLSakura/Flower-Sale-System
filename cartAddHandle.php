@@ -48,16 +48,7 @@ if ($id != '') {
     echo "<script>alert('购物车添加商品成功！');history.back();</script>";
 } else
     $_SESSION['cartlist'] = $cartlist;
-//echo "以下为get到的商品信息：<br>";
-//print_r($good);
-//echo "<br>以下为购物车商品信息：<br>";
-//print_r($cartlist);
-//echo "<br>以下为session中的购物车商品信息<br>";
-//print_r($_SESSION['cartlist']);
-//echo "<br>以下为测试中的购物车商品信息<br>";
-//for($i=0;$i<sizeof($_SESSION['cartlist']);$i++){
-//    print_r($_SESSION['cartlist'][$i]->goodid);
-//}
+
 
 
 

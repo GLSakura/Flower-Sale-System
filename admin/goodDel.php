@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/8
- * Time: 13:42
- */
+header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";
 $id=$_GET['id'];
 $deletesql = "delete from goods where GoodId=$id";

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/8
- * Time: 16:54
- */
+header("content-type:text/html;charset=utf-8");
 //$_FILES文件上传变量
 function upload()
 {
