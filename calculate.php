@@ -17,8 +17,6 @@ if (empty($arr)) {
     $address = $row['UserAddress'];
     $phone = $row['UserPhone'];
     $name = $row['TrueName'];
-    $userimage = $row['UserImage'];
-//    var_dump($address);
 }
 for ($i = 0; $i < sizeof($arr); $i++) {
     $id = $arr[$i];

@@ -1,9 +1,7 @@
 <?php
 header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";     //调用数据库连接文件
-include "userImageUpload.php";
 $IsRegister=0;//确认用户名是否被注册
-//接收前台传递过来的post值
 $username=$_POST['username'];
 $password=$_POST['password'];
 $password_c=$_POST['password-confirm'];
@@ -35,10 +33,9 @@ else {
             }
             else{//用户名不存在，可以创建!
                 //执行插入语句
-                $filepath=upload();
                 $sqlinsert = "INSERT INTO users(UserName,TrueName,UserPassword,UserSex,UserAge,UserEmail,
-              UserPhone,UserAddress,UserImage,UserPower,ConsumeNum,RegisterTime,IsVIP) VALUES('$username','$truename','$password',
-              '$usersex','$userage','$useremail','$userphone','$useraddress','$filepath','$userpower','$consumenum','$date','$isVIP')";
+              UserPhone,UserAddress,UserPower,ConsumeNum,RegisterTime,IsVIP) VALUES('$username','$truename','$password',
+              '$usersex','$userage','$useremail','$userphone','$useraddress','$userpower','$consumenum','$date','$isVIP')";
                 if($result1 = mysqli_query($coon, $sqlinsert)){
                     echo "<script>alert('添加用户成功！');window.location.href='userManager.php';</script>";
                 }
@@ -48,4 +45,3 @@ else {
         }
     }
 }
-?>

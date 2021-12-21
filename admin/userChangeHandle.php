@@ -1,7 +1,6 @@
 <?php
 header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";
-include "userImageUpload.php";
 $id = $_GET['id'];
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -15,10 +14,9 @@ $useraddress = $_POST['useraddress'];
 $userpower = $_POST['userpower'];
 $consumenum = $_POST['consumenum'];
 $isVIP = $_POST['isVIP'];
-$filepath = upload();
 $IsRegister = 0;
 $updatesql = "update users set UserName='$username',TrueName='$truename',UserPassword='$password',UserSex='$usersex',UserAge='$userage',UserEmail='$useremail',UserPhone='$userphone',UserAddress='$useraddress',
- UserPower='$userpower',ConsumeNum='$consumenum',IsVIP='$isVIP',UserImage='$filepath' where UserId=$id";
+ UserPower='$userpower',ConsumeNum='$consumenum',IsVIP='$isVIP' where UserId=$id";
 
 if ($username == "" || $truename == "" || $password == "" || $password_c == "" || $userage == "" || $userphone == "" || $useraddress == "" || $userpower == "" || $isVIP == "")
     echo "<script>alert('用户信息填写不完整，请重新核实！');history.back();</script>";

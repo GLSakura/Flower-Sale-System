@@ -53,7 +53,6 @@ if ($result = mysqli_query($coon, $sql_flower_profit)) {
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li><a href="commentManager.php">评论管理</a></li>
-        <li><a href="sizeManager.php">规格配置</a></li>
         <li class="active"><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>

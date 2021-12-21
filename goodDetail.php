@@ -35,7 +35,8 @@ if ($result3 = mysqli_query($coon, $sql3)) {
                         ?>
                         <table class="table">
                             <tr>
-                                <td style="font-weight: bold;" colspan="2"><span><?php echo $value3['Time']; ?></span></td>
+                                <td style="font-weight: bold;" colspan="2"><span><?php echo $value3['Time']; ?></span>
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 70px;font-weight: bold;">
@@ -64,47 +65,6 @@ if ($result3 = mysqli_query($coon, $sql3)) {
                 <a class="btn btn-danger" style="color: #F22D00;width: 100%;"
                    href="cartAddHandle.php?id=<?php echo $value['GoodId'] ?>"><span
                             style="color: white;">加入购物车</span></a><br><br>
-                <div style="color: #828282;">
-                    <h3 style="font-size: 15px;font-weight: lighter;font-family: Times, serif, simhei;border-bottom: 1px solid black;">
-                        规格参数<br><span>composition</span></h3>
-                    <span>
-                                <?php
-                                $size = $value['GoodSize'];
-                                $sqlsize = "select * from goodsizes where SizeId='$size'";
-                                $result = mysqli_query($coon, $sqlsize);
-                                $row = mysqli_fetch_assoc($result);
-                                if ($row['红玫瑰'] != 0) {
-                                    echo $row['红玫瑰'] . "朵红玫瑰";
-                                }
-                                if ($row['满天星'] != 0) {
-                                    echo $row['满天星'] . "朵满天星";
-                                }
-                                if ($row['百合'] != 0) {
-                                    echo $row['百合'] . "朵百合";
-                                }
-                                if ($row['紫玫瑰'] != 0) {
-                                    echo $row['紫玫瑰'] . "朵紫玫瑰";
-                                }
-                                if ($row['蓝玫瑰'] != 0) {
-                                    echo $row['蓝玫瑰'] . "朵蓝玫瑰";
-                                }
-                                if ($row['郁金香'] != 0) {
-                                    echo $row['郁金香'] . "朵郁金香";
-                                }
-                                if ($row['白玫瑰'] != 0) {
-                                    echo $row['白玫瑰'] . "朵白玫瑰";
-                                }
-                                if ($row['向日葵'] != 0) {
-                                    echo $row['向日葵'] . "朵向日葵";
-                                }
-                                if ($row['康乃馨'] != 0) {
-                                    echo $row['康乃馨'] . "朵康乃馨";
-                                }
-                                if ($row['玛利亚'] != 0) {
-                                    echo $row['玛利亚'] . "朵玛利亚";
-                                }
-                                ?></span><br>
-                </div>
                 <br>
                 <?php
                 if (!empty($data1)) {

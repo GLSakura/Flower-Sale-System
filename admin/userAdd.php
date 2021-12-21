@@ -8,7 +8,6 @@ include "header_admin.php";
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li><a href="commentManager.php">评论管理</a></li>
-        <li><a href="sizeManager.php">规格配置</a></li>
         <li><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>
@@ -66,10 +65,6 @@ include "header_admin.php";
     <div class="form-group">
         <label class="control-label" for="isVIP">是否为VIP：</label>
         <input class="form-control" type="text" name="isVIP" placeholder="0表示非VIP用户，1表示VIP用户">
-    </div>
-    <div class="form-group">
-        <label class="control-label" for="userimage">用户头像：</label>
-        <input class="form-control" type="file" name="userimage">
     </div>
     <button class="btn btn-info" type="submit">添加用户</button>
     <button class="btn btn-default" type="reset">重置</button>

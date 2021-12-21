@@ -28,73 +28,7 @@ for ($i = 0; $i < sizeof($orderlist); $i++) {
         $str2 = $goodlist[$j][1];
         $sql2 = "update goods set GoodNumber=(GoodNumber-$str2),SoldNumber=(SoldNumber+$str2) where GoodId='$str'";
         mysqli_query($coon, $sql2);
-        $sqlsize = "select GoodSize from goods where GoodId='$str'";
-        $resultsize = mysqli_query($coon, $sqlsize);
-        $rowsize = mysqli_fetch_assoc($resultsize);
-        $size = $rowsize['GoodSize'];
-        $sqlsize1 = "select * from goodsizes where SizeId='$size'";
-        $resultsize1 = mysqli_query($coon, $sqlsize1);
-        $rowsize1 = mysqli_fetch_assoc($resultsize1);
-        if ($rowsize1['红玫瑰'] != 0) {
-            $str = '红玫瑰';
-            $num = $rowsize1['红玫瑰'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+4*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['满天星'] != 0) {
-            $str = '满天星';
-            $num = $rowsize1['满天星'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+5*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['百合'] != 0) {
-            $str = '红玫瑰';
-            $num = $rowsize1['红玫瑰'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+10*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['紫玫瑰'] != 0) {
-            $str = '紫玫瑰';
-            $num = $rowsize1['紫玫瑰'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+10*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['蓝玫瑰'] != 0) {
-            $str = '蓝玫瑰';
-            $num = $rowsize1['蓝玫瑰'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+5*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['郁金香'] != 0) {
-            $str = '郁金香';
-            $num = $rowsize1['郁金香'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+4*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['白玫瑰'] != 0) {
-            $str = '白玫瑰';
-            $num = $rowsize1['白玫瑰'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+4*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['向日葵'] != 0) {
-            $str = '向日葵';
-            $num = $rowsize1['向日葵'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+5*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['康乃馨'] != 0) {
-            $str = '康乃馨';
-            $num = $rowsize1['康乃馨'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+2*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
-        if ($rowsize1['玛利亚'] != 0) {
-            $str = '玛利亚';
-            $num = $rowsize1['玛利亚'] * $str2;
-            $sqlupdate = "update flowers set FlowerNumber=(FlowerNumber-$num),SoldNumber=(SoldNumber+$num),SoldProfit=(SoldProfit+5*$num) where FlowerName='$str'";
-            mysqli_query($coon, $sqlupdate);
-        }
+
     }
 }
 $sql3 = "update users set ConsumeNum=(ConsumeNum+$price) where UserName='$user'";

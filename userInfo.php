@@ -14,7 +14,6 @@ if ($result = mysqli_query($coon, $sql)) {
     <thead><p style="font-size: 24px;font-weight: bold;">个人资料</p></thead>
     <tr style="font-size: 16px;">
         <td>
-            <span>当前头像：</span><img style="width: 60px;height: 60px;" src="<?php echo $row1['UserImage']; ?>" alt="">
             <p>用户名：&nbsp;&nbsp;<?php echo $row1['UserName']; ?></p>
             <p>真实姓名：&nbsp;&nbsp;<?php echo $row1['TrueName']; ?></p>
             <p>性别：&nbsp;&nbsp;<?php echo $row1['UserSex']; ?></p>

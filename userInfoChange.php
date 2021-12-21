@@ -54,10 +54,6 @@ if ($result = mysqli_query($coon, $sql)) {
         <label class="control-label" for="useraddress">常用地址：</label>
         <input class="form-control" type="text" name="useraddress" value="<?php echo $data['UserAddress']; ?>">
     </div>
-    <div class="form-group">
-        <label class="control-label" for="userimage">用户头像：</label>
-        <input class="form-control" type="file" name="userimage">
-    </div>
     <button class="btn btn-info" type="submit">提交修改</button>
 </form>
 </body>

@@ -17,7 +17,6 @@ $num = mysqli_num_rows($result);
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li><a href="commentManager.php">评论管理</a></li>
-        <li><a href="sizeManager.php">规格配置</a></li>
         <li><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>
@@ -38,7 +37,6 @@ $num = mysqli_num_rows($result);
         <th style='width: 30px;'>ID</th>
         <th style='width: 80px;'>用户名</th>
         <th style='width: 80px;'>姓名</th>
-        <th>头像</th>
         <th style='width: 90px;'>密码</th>
         <th style='width: 45px;'>性别</th>
         <th style='width: 45px;'>年龄</th>
@@ -62,8 +60,6 @@ $num = mysqli_num_rows($result);
                 <td><?php echo $value['UserId']; ?></td>
                 <td><?php echo $value['UserName']; ?></td>
                 <td><?php echo $value['TrueName']; ?></td>
-                <td><?php $imagepath = "../" . $value['UserImage'];
-                    echo "<img class='img-circle' style='width: 40px;height: 40px;' src='$imagepath'>"; ?></td>
                 <td><?php echo $value['UserPassword']; ?></td>
                 <td><?php echo $value['UserSex']; ?></td>
                 <td><?php echo $value['UserAge']; ?></td>
