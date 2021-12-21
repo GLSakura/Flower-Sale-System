@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/22
- * Time: 21:18
- */
 include "connectSQL.php";
 session_start();
 $data=array();

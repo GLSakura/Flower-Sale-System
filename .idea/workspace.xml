@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524b506f-1ea1-48c5-bd37-d1252c96fd10" name="默认的" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="524b506f-1ea1-48c5-bd37-d1252c96fd10" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIPExplain.php" beforeDir="false" afterPath="$PROJECT_DIR$/VIPExplain.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculate.php" beforeDir="false" afterPath="$PROJECT_DIR$/calculate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartAddHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/cartAddHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commentAddHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/commentAddHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goodDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goodSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotGoods.php" beforeDir="false" afterPath="$PROJECT_DIR$/hotGoods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/imageUpload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lastGoods.php" beforeDir="false" afterPath="$PROJECT_DIR$/lastGoods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginOut.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginOut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderDelHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderDelHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderPay.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderPay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderPayHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderPayHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderShow.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderShow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qqtest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registerHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/registerHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInfoChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfoChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userInfoChangeHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfoChangeHandle.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -39,83 +72,6 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-              <folding>
-                <element signature="e#57#63#0" expanded="true" />
-                <element signature="e#63#69#0" expanded="true" />
-                <element signature="e#69#75#0" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cartAddHandle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cartAddHandle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registerHandle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registerHandle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calculate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shoppingCart.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shoppingCart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2698">
-              <caret line="142" column="76" selection-start-line="142" selection-start-column="76" selection-end-line="142" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cartHandle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/cartHandle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
-              <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="118" selection-end-column="9" />
-              <folding>
-                <element signature="e#1794#2050#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users" pinned="false" current-in-tab="false">
-        <entry file="das://e194dc4f-c404-45a4-afa1-36135798095a/schema/flowerweb/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -141,10 +97,13 @@
       <find>Highcharts.com</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/admin/goodManager.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/admin/userAdd.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/admin/goodAdd.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/admin/goodManager.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -233,6 +192,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
+  <component name="ProjectId" id="22Zs6syg3e5PZr67nJ4CvtYvYrl" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -257,6 +217,10 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -266,6 +230,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -276,48 +241,38 @@
       <recent name="F:\Phpstorm Projects\毕设\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="F:\Phpstorm Projects\毕设" />
       <recent name="F:\Phpstorm Projects\毕设\styles" />
       <recent name="F:\Phpstorm Projects\毕设\scripts" />
       <recent name="F:\Phpstorm Projects\毕设\admin" />
-      <recent name="F:\Phpstorm Projects\毕设\CSS" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="PHP Script.test.php">
-    <configuration name="calculate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/calculate.php" />
-    <configuration name="cartAddHandle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/cartAddHandle.php" />
-    <configuration name="goodChangeHandle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/admin/goodChangeHandle.php" />
-    <configuration name="qqtest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/qqtest.php" />
-    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php" />
+  <component name="RunManager" selected="PHP 脚本.calculate.php">
+    <configuration name="calculate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/calculate.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="cartAddHandle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/cartAddHandle.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="goodChangeHandle.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/admin/goodChangeHandle.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="qqtest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/qqtest.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="PHP Script.test.php" />
-      <item itemvalue="PHP Script.goodChangeHandle.php" />
-      <item itemvalue="PHP Script.qqtest.php" />
-      <item itemvalue="PHP Script.cartAddHandle.php" />
-      <item itemvalue="PHP Script.calculate.php" />
+      <item itemvalue="PHP 脚本.calculate.php" />
+      <item itemvalue="PHP 脚本.cartAddHandle.php" />
+      <item itemvalue="PHP 脚本.goodChangeHandle.php" />
+      <item itemvalue="PHP 脚本.qqtest.php" />
+      <item itemvalue="PHP 脚本.test.php" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.test.php" />
-        <item itemvalue="PHP Script.calculate.php" />
-        <item itemvalue="PHP Script.qqtest.php" />
-        <item itemvalue="PHP Script.cartAddHandle.php" />
-        <item itemvalue="PHP Script.goodChangeHandle.php" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -397,6 +352,7 @@
       <workItem from="1529367863012" duration="5378000" />
       <workItem from="1529398002323" duration="2138000" />
       <workItem from="1529423117962" duration="875000" />
+      <workItem from="1640056277300" duration="2388000" />
     </task>
     <servers />
   </component>
@@ -434,15 +390,21 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="7" />
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

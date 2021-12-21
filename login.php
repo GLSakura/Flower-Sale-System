@@ -22,8 +22,6 @@
                 echo "<p>欢迎您，" . $_SESSION['user'] . "！  " . "<a class='btn btn-danger btn-xs'  href='loginOut.php'>退出登录</a>" . "</p>";
             }
             ?>
-            <!--                <a href="#" class="">欢迎您，--><?php //echo $_SESSION['user'];?><!--</a>-->
-            <!--                <a href="Register.php">注册</a>-->
         </div>
         <div class="title-logo">
             <img src="./images/title-logo.jpg" alt="法兰沃">

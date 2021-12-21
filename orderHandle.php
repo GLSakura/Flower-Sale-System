@@ -1,26 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yjry
- * Date: 2018/4/25
- * Time: 18:51
- */
+header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";
 session_start();
-$arr=array();
-$arr=$_POST['select'];
-$arr1=$_POST['num'];
-$address=$_POST['address'];
-$sumprice=$_POST['sumprice'];
-$name=$_POST['name'];
-$phone=$_POST['phone'];
-$words=$_POST['words'];
-$user=$_SESSION['user'];
-$goods="";
-$ordertime=date("Y-m-d H:i:s");
-$sql="select * from users where UserName='$user'";
-$result=mysqli_query($coon,$sql);
-$row=mysqli_fetch_assoc($result);
+$arr = array();
+$arr = $_POST['select'];
+$arr1 = $_POST['num'];
+$address = $_POST['address'];
+$sumprice = $_POST['sumprice'];
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$words = $_POST['words'];
+$user = $_SESSION['user'];
+$goods = "";
+$ordertime = date("Y-m-d H:i:s");
+$sql = "select * from users where UserName='$user'";
+$result = mysqli_query($coon, $sql);
+$row = mysqli_fetch_assoc($result);
 //echo $address;
 //if(empty($sumprice))
 //    echo "总价为空.";
@@ -34,32 +29,33 @@ $row=mysqli_fetch_assoc($result);
 //    }
 //}
 //将商品ID和商品数量合并到一起，存放到新数组中
-function composeGoods($str1,$str2){
-    $goods=array();
-    $lastgoods="";
-    for($i=0;$i<sizeof($str1);$i++){
-        $goods[$i]=$str1[$i].",".$str2[$i];
+function composeGoods($str1, $str2)
+{
+    $goods = array();
+    $lastgoods = "";
+    for ($i = 0; $i < sizeof($str1); $i++) {
+        $goods[$i] = $str1[$i] . "," . $str2[$i];
     }
-    for($i=0;$i<sizeof($str1);$i++){
-        if($i==sizeof($str1)-1)
-            $lastgoods.=$goods[$i];
+    for ($i = 0; $i < sizeof($str1); $i++) {
+        if ($i == sizeof($str1) - 1)
+            $lastgoods .= $goods[$i];
         else
-            $lastgoods.=($goods[$i]."|");
+            $lastgoods .= ($goods[$i] . "|");
     }
     return $lastgoods;
 }
-$goods=composeGoods($arr,$arr1);
+
+$goods = composeGoods($arr, $arr1);
 //echo $goods;
 //for($i=0;$i<sizeof($goods);$i++){
 //    echo $goods[$i];
 //}
-if($address==''||$name==''||$phone=='')
+if ($address == '' || $name == '' || $phone == '')
     echo "<script>alert('您的信息填写不完整，请重新核实！');window.location.href='shoppingCart.php';</script>";
 else {
-    if(mb_strlen($words)>=255){
+    if (mb_strlen($words) >= 255) {
         echo "<script>alert('你的留言超出了最大限制长度（255）！请重新输入。');window.location.href='shoppingCart.php';</script>";
-    }
-    else {
+    } else {
         $sql = "insert into orders(OrderTime, Goods, UserName, ReceiveName, Phone, Address, Words, OrderPrice, IsPaid) 
 values ('$ordertime','$goods','$user','$name','$phone','$address','$words','$sumprice','0')";
         $result1 = mysqli_query($coon, $sql);
@@ -90,10 +86,10 @@ values ('$ordertime','$goods','$user','$name','$phone','$address','$words','$sum
     <div class="row" style="margin-top: 20px;">
         <div class="col-md-4" style="margin-top: 30px;">欢迎来到法兰沃鲜花购物网站!
             <?php
-            if($_SESSION['user']=="")
-                echo "<a class='btn btn-success btn-xs' href='login.php'>登录</a>"."&nbsp;&nbsp;&nbsp;<a class='btn btn-info btn-xs'  href='register.php'>注册</a>";
+            if ($_SESSION['user'] == "")
+                echo "<a class='btn btn-success btn-xs' href='login.php'>登录</a>" . "&nbsp;&nbsp;&nbsp;<a class='btn btn-info btn-xs'  href='register.php'>注册</a>";
             else {
-                echo '<p>欢迎您，'.'<a href="userInfo.php"><img class="img-rounded" style="width: 30px;height: 30px;" src="'.$row['UserImage'].'" title="'.$user.'"></a>'.'<a class="btn btn-danger btn-xs"  href="loginOut.php">退出登录</a>'.'</p>';
+                echo '<p>欢迎您，' . '<a href="userInfo.php"><img class="img-rounded" style="width: 30px;height: 30px;" src="' . $row['UserImage'] . '" title="' . $user . '"></a>' . '<a class="btn btn-danger btn-xs"  href="loginOut.php">退出登录</a>' . '</p>';
             }
             ?>
         </div>
