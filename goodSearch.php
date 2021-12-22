@@ -64,24 +64,26 @@ $num = mysqli_num_rows($result);
     if (!empty($data)) {
         foreach ($data as $value) {
             ?>
-            <div class="col-md-4">
-                <div><?php $imagepath = "./" . $value['GoodImage'];
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <?php
+                    $imagepath = "./" . $value['GoodImage'];
                     $href = "goodDetail.php?id=" . $value['GoodId'];
-                    echo "<a href='$href'><img class='img-rounded' style='width: 100%;height: 500px;' src='$imagepath'></a>"; ?></div>
-                <h5>
-                    <span>THE FLOWER</span><br>
-                    <span style="font-size: 18px;font-family: Arial;">￥<?php echo $value['GoodPrice1']; ?></span><br>
-                    <span style="color: #ff4400;font-size: 18px;">VIP：<strong>￥<?php echo $value['GoodPrice2']; ?></strong></span>
-                    <span style="float: right;color: #828282;">已有<?php echo $value['SoldNumber']; ?>人购买</span><br>
-                    <span><?php echo $value['GoodName']; ?></span><br>
-                    <span style="color: #828282;"><?php echo $value['GoodSummary']; ?></span><br>
-                    <span>
-                                <a class="btn btn-info btn-xs" href="goodDetail.php?id=<?php echo $value['GoodId'] ?>">查看详情</a>
-                                <a class="btn btn-danger btn-xs" style="color: #F22D00;"
-                                   href="cartAddHandle.php?id=<?php echo $value['GoodId'] ?>"><span
-                                            style="color: white;">加入购物车</span></a>
-                            </span>
-                </h5>
+                    echo "<a href='$href'><img class='img-rounded ' style='width: 100%;height: 400px;' src='$imagepath'></a>";
+                    ?>
+                    <div class="caption">
+                        <p class="text-left"><h3 style="font-weight: bold;"><?php echo $value['GoodName']; ?></h3></p>
+                        <p>
+                            <span style="font-size: 18px;font-family: Arial;">普通会员：￥<?php echo $value['GoodPrice1']; ?></span><br>
+                            <span style="color: #ff4400;font-size: 18px;">超级会员：<strong>￥<?php echo $value['GoodPrice2']; ?></strong></span><br>
+                            <span style="float: right;color: #828282;">已有<?php echo $value['SoldNumber']; ?>人购买</span><br>
+                        </p>
+                        <p>
+                            <a href="goodDetail.php?id=<?php echo $value['GoodId'] ?>" class="btn btn-info" role="button">查看详情</a>
+                            <a href="cartAddHandle.php?id=<?php echo $value['GoodId'] ?>" class="btn btn-danger" role="button">加入购物车</a>
+                        </p>
+                    </div>
+                </div>
             </div>
             <?php
         }

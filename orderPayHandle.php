@@ -2,9 +2,9 @@
 header("content-type:text/html;charset=utf-8");
 include "connectSQL.php";
 session_start();
+$user = $_SESSION['user'];
 $ispaid = $_GET['ispaid'];
 $orderid = $_GET['orderid'];
-$user = $_SESSION['user'];
 $sql5 = "select * from users where UserName='$user'";
 $result5 = mysqli_query($coon, $sql5);
 $row5 = mysqli_fetch_assoc($result5);
@@ -28,13 +28,12 @@ for ($i = 0; $i < sizeof($orderlist); $i++) {
         $str2 = $goodlist[$j][1];
         $sql2 = "update goods set GoodNumber=(GoodNumber-$str2),SoldNumber=(SoldNumber+$str2) where GoodId='$str'";
         mysqli_query($coon, $sql2);
-
     }
 }
 $sql3 = "update users set ConsumeNum=(ConsumeNum+$price) where UserName='$user'";
 mysqli_query($coon, $sql3);
-$sql4 = "update users set IsVIP='1' where UserName='$user'";
 if ($row5['ConsumeNum'] >= 10000) {
+    $sql4 = "update users set IsVIP='1' where UserName='$user'";
     mysqli_query($coon, $sql4);
     if (mysqli_affected_rows($coon)) {
         echo "<script>alert('您的消费金额已达到10000元以上，恭喜您成为VIP用户！');</script>";

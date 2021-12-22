@@ -17,9 +17,6 @@ include "header_admin.php";
         <h1>后台管理系统</h1>
     </div>
     <div class="panel-body">
-        <p>本网站是个人开发的小项目，目前实现的功能比较少，很不全面，另外网页操作界面还是有一些不美观。总的来说
-            本网站有很多小缺陷，期待在日后，我们可以将其功能和界面修缮，以达到用户的需求。
-        </p>
         <h3>系统信息</h3>
         <table class="table table-bordered">
             <tr>
@@ -39,7 +36,7 @@ include "header_admin.php";
         <table class="table table-bordered">
             <tr>
                 <th>系统名称</th>
-                <td>和音鲜花购物商城</td>
+                <td>鲜花购物商城</td>
             </tr>
 
             <tr>

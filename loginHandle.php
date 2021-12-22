@@ -10,7 +10,6 @@ if ($username == "" || $password == "")
 else {
     if ($result = mysqli_query($coon, $sql)) {
         while ($row = mysqli_fetch_assoc($result)) {
-//            echo $row['UserName'];
             if ($row['UserName'] == $username && $row['UserPassword'] == $password) {
                 if ($row['UserPower'] == '1') {
                     echo '<script>alert("欢迎您，管理员登陆成功！");window.location.href="admin/manage.php"; </script><br>';

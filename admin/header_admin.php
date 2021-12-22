@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>后台管理系统</title>
-    <link rel="icon" type="text/css" href="../images/logo.ico">
+    <link rel="icon" type="text/css" href="../images/logo.png">
     <link rel="stylesheet" href="../styles/index-style.css">
     <link rel="stylesheet" href="../styles/allset.css">
     <link rel="stylesheet" href="../styles/bootstrap.min.css">

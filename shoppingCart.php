@@ -63,11 +63,9 @@ for ($i = 0; $i < sizeof($cartlist); $i++) {
                             echo $value['GoodPrice2'];
                         ?></td>
                     <td class="count" style="line-height: 80px;">
-                        <span class="reduce" style="font-size: 15px;">-</span>
                         <input class="count-input" type="text" style="width: 60px;height: 30px;" name="num[]"
                                value="<?php echo $cartlist[$j]->goodnum;
                                $j++; ?>">
-                        <span class="add" style="font-size: 15px;">+</span>
                     </td>
                     <td class="subtotal" style="line-height: 80px; color: #ff4400;">
                         <?php

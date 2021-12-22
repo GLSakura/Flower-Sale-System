@@ -4,7 +4,6 @@ header("content-type:text/html;charset=utf-8");
 function upload()
 {
     define('ROOT', dirname(__FILE__) . '/');
-//print_r($_FILES);
     $filename = $_FILES['goodimage']['name'];
     $type = $_FILES['goodimage']['type'];
     $tmp_name = $_FILES['goodimage']['tmp_name'];

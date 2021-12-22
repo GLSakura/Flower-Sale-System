@@ -9,16 +9,14 @@ $goodprice1=$_POST['goodprice1'];
 $goodprice2=$_POST['goodprice2'];
 $goodnumber=$_POST['goodnumber'];
 $soldnumber=$_POST['soldnumber'];
-$goodsize=$_POST['goodsize'];
-$goodmessage=$_POST['goodmessage'];
 $date=date("Y-m-d H:i:s");
 $filepath = upload();
 $IsRegister=0;
 $updatesql = "update goods set GoodName='$goodname',GoodSummary='$goodsummary',GoodPrice1='$goodprice1',GoodPrice2='$goodprice2',
-GoodNumber='$goodnumber',SoldNumber='$soldnumber',GoodSize='$goodsize',GoodMessage='$goodmessage',GoodImage='$filepath' where GoodId=$id";
+GoodNumber='$goodnumber',SoldNumber='$soldnumber',GoodImage='$filepath' where GoodId=$id";
 $updatetime="update goods set UpdateTime='$date' where GoodId=$id";
 
-if($goodname==''||$goodsummary==''||$goodprice1==''||$goodprice2==''||$goodmessage==''||$goodnumber==''||$soldnumber==''||$goodsize=='')
+if($goodname==''||$goodsummary==''||$goodprice1==''||$goodprice2==''||$goodnumber==''||$soldnumber=='')
     echo "<script>alert('商品填写信息不完整，请重新核实！');history.back();</script>";
 else {
     if($result=mysqli_query($coon,"select * from goods where GoodId=$id")){

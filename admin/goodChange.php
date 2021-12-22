@@ -46,14 +46,6 @@ if ($result = mysqli_query($coon, $sql)) {
         <input class="form-control" type="text" name="soldnumber" value="<?php echo $data['SoldNumber']; ?>">
     </div>
     <div class="form-group">
-        <label class="control-label" for="goodsize">规格参数：</label>
-        <input class="form-control" type="text" name="goodsize">
-    </div>
-    <div class="form-group">
-        <label class="control-label" for="goodmessage">商品简介：</label>
-        <input class="form-control" type="text" name="goodmessage" value="<?php echo $data['GoodMessage']; ?>">
-    </div>
-    <div class="form-group">
         <label class="control-label" for="goodimage">商品图片：</label>
         <input class="form-control" type="file" name="goodimage">
     </div>

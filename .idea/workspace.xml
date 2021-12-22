@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524b506f-1ea1-48c5-bd37-d1252c96fd10" name="默认的" comment="">
+    <list default="true" id="524b506f-1ea1-48c5-bd37-d1252c96fd10" name="默认的" comment="默认的">
+      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo1.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/commentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/commentSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commentSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIPExplain.php" beforeDir="false" afterPath="$PROJECT_DIR$/VIPExplain.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/goodAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodAdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/goodAddHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodAddHandle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/goodChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/goodChangeHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodChangeHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/goodImageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodImageUpload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/goodManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/goodSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/goodSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/orderChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orderChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/orderManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orderManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/orderSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/orderSearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeAdd.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeAddHandle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeChange.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeChangeHandle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeDel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sizeSearch.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/soldAnalysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/soldAnalysis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userAddHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userAddHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userChangeHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userChangeHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userImageUpload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/userSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userSearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculate.php" beforeDir="false" afterPath="$PROJECT_DIR$/calculate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goodDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goodSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodSearch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotGoods.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lastGoods.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderPay.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderPay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orderPayHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderPayHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registerHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/registerHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInfoChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfoChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userInfoChangeHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/userInfoChangeHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +96,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/admin/goodManager.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -198,6 +198,9 @@
     <option name="height" value="1096" />
   </component>
   <component name="ProjectId" id="22Zs6syg3e5PZr67nJ4CvtYvYrl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -227,6 +230,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -357,7 +361,10 @@
       <workItem from="1529367863012" duration="5378000" />
       <workItem from="1529398002323" duration="2138000" />
       <workItem from="1529423117962" duration="875000" />
-      <workItem from="1640056277300" duration="14305000" />
+      <workItem from="1640056277300" duration="22758000" />
+      <workItem from="1640142824479" duration="130000" />
+      <workItem from="1640154881148" duration="536000" />
+      <workItem from="1640172373324" duration="2085000" />
     </task>
     <servers />
   </component>
@@ -407,9 +414,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

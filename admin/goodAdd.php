@@ -39,14 +39,6 @@ include "header_admin.php";
         <input class="form-control" type="text" name="soldnumber">
     </div>
     <div class="form-group">
-        <label class="control-label" for="goodsize">规格参数：</label>
-        <input class="form-control" type="text" name="goodsize">
-    </div>
-    <div class="form-group">
-        <label class="control-label" for="goodmessage">详细信息：</label>
-        <input class="form-control" type="text" name="goodmessage">
-    </div>
-    <div class="form-group">
         <label class="control-label" for="goodimage">商品图片：</label>
         <input class="form-control" type="file" name="goodimage">
     </div>

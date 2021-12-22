@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>注册页面</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
+    <link rel="icon" type="text/css" href="./images/logo.png">
     <link rel="stylesheet" href="styles/index-style.css">
     <link rel="stylesheet" href="styles/allset.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -12,7 +12,7 @@
 <body style="margin: 0 auto;background-image: url('images/Login-background.png');background-repeat:no-repeat; -webkit-background-size: 100%;background-size: 100%;">
 <div class="content">
     <div class="title">
-        <div class="title-left">欢迎来到和音鲜花购物网站!
+        <div class="title-left">鲜花购物商城
             <?php
             session_start();
             if ($_SESSION['user'] == "")

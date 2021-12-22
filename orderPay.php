@@ -8,7 +8,7 @@ $row2 = mysqli_fetch_assoc($result2);
 $sql = "update orders set IsPaid='1' where OrderId='$orderid'";
 
 ?>
-当前订单总价格为：<?php echo $row2['OrderPrice']; ?>
+当前订单总价格为：<?php echo $row2['OrderPrice']; ?>，
 共需支付<?php echo $row2['OrderPrice']; ?>
 <br>
 <label>请选择支付平台：</label><br>
@@ -20,8 +20,6 @@ $sql = "update orders set IsPaid='1' where OrderId='$orderid'";
 <img src="images/yhk-pay.jpg" alt="" style="width: 100px;height: 40px;">银行卡支付<input class="radio2" type="radio"
                                                                                     name="radio2"
                                                                                     value="radio单选项3"/><br>
-<span>请输入支付密码：</span><br>
-<input type="password" placeholder="在此输入支付密码"><br><br>
 <a class="btn btn-success" href="orderPayHandle.php?orderid=<?php echo $orderid; ?>&&ispaid=1">确认支付</a>
 </div>
 </body>

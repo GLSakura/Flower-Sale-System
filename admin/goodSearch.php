@@ -38,13 +38,12 @@ $num = mysqli_num_rows($result);
     <tr>
         <th style='width: 6%;'>商品ID</th>
         <th style='width: 7%;'>商品名称</th>
-        <th style="width: 7%;">商品简介</th>
+        <th style="width: 21%;">商品简介</th>
         <th style='width: 7%;'>普通价格</th>
         <th style='width: 7%;'>会员价格</th>
         <th style='width: 7%;'>商品数量</th>
         <th style="width: 7%;">已售数量</th>
         <th style="width: 7%;">规格参数</th>
-        <th style='width: 21%;'>详细信息</th>
         <th style='width: 8%;'>缩略图片</th>
         <th style="width: 13%;">更新时间</th>
         <th style="width: 10%;">操作</th>
@@ -65,7 +64,6 @@ $num = mysqli_num_rows($result);
                 <td><?php echo $value['GoodNumber']; ?></td>
                 <td><?php echo $value['SoldNumber']; ?></td>
                 <td><?php echo $value['GoosSize']; ?></td>
-                <td><?php echo $value['GoodMessage']; ?></td>
                 <td><?php $imagepath = "../" . $value['GoodImage'];
                     echo "<img class='img-circle' style='width: 60px;height: 60px;' src='$imagepath'>"; ?></td>
                 <td><?php echo $value['UpdateTime']; ?></td>

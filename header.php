@@ -15,7 +15,7 @@ if ($user != '') {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>鲜花购物网站</title>
-    <link rel="icon" type="text/css" href="./images/logo.ico">
+    <link rel="icon" type="text/css" href="./images/logo.png">
     <link rel="stylesheet" href="styles/index-style.css">
     <link rel="stylesheet" href="styles/allset.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -40,7 +40,7 @@ if ($user != '') {
 <body style="margin: 0 auto;">
 <div class="content">
     <div class="row" style="margin-top: 20px;">
-        <div class="col-md-4" style="margin-top: 30px;">和音鲜花购物网站
+        <div class="col-md-4" style="margin-top: 30px;">鲜花购物商城
             <?php
             if ($_SESSION['user'] == "")
                 echo "<a class='btn btn-success btn-xs' href='login.php'>登录</a>" . "&nbsp;&nbsp;&nbsp;<a class='btn btn-info btn-xs'  href='register.php'>注册</a>";
@@ -71,7 +71,7 @@ if ($user != '') {
             <div class="form-group">
                 <input type="text" class="form-control" name="goodsearch" placeholder="请输入商品名检索信息"/>
             </div>
-            <button type="submit" class="btn btn-default">搜索</button>
+            <button type="submit" class="btn btn-success">搜索</button>
         </form>
     </div>
     <hr>
