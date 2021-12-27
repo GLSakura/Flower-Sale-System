@@ -8,12 +8,5 @@ include "header.php";
 <h3>如何成为VIP？</h3>
 <p>只要在本网站注册并且消费金额达到1万及以上，用户自动升级为VIP，享有独有优惠价格。</p>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $("li").click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-        })
-    })
-</script>
 </body>
 </html>

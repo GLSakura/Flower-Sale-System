@@ -92,12 +92,5 @@ $num = mysqli_num_rows($result);
     ?>
 </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $("li").click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-        })
-    })
-</script>
 </body>
 </html>
