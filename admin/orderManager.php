@@ -30,17 +30,17 @@ $num = mysqli_num_rows($result);
 <table class="table table-bordered table-hover">
     <thead>
     <tr>
-        <th style='width: 60px;'>订单ID</th>
-        <th style='width: 80px;'>商品id及数量（用|分割）</th>
-        <th style='width: 60px;'>用户名</th>
-        <th style='width: 90px;'>收件人姓名</th>
-        <th style='width: 90px;'>联系电话</th>
-        <th style='width: 100px;'>收货地址</th>
-        <th style='width: 30px;'>留言</th>
-        <th style='width: 45px;'>订单金额</th>
-        <th style='width: 30px;'>是否付款</th>
-        <th style='width: 130px;'>生成时间</th>
-        <th style="width: 110px;">操作</th>
+        <th style="width: 5%;">订单ID</th>
+        <th style="width: 8%;">商品id及数量</th>
+        <th style="width: 5%;">用户名</th>
+        <th style="width: 5%;">收件人</th>
+        <th style="width: 5%;">联系电话</th>
+        <th style="width: 12%;">收货地址</th>
+        <th style="width: 10%;">留言</th>
+        <th style="width: 5%;">订单金额</th>
+        <th style="width: 5%;">是否付款</th>
+        <th style="width: 10%;">生成时间</th>
+        <th style="width: 7%;">操作</th>
     </tr>
     </thead>
     <tbody style="font-size: 6px;">

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <script src="scripts/bootstrap.min.js"></script>
 </head>
-<body style="margin: 0 auto;background-image: url('images/Login-background.png');background-repeat:no-repeat; -webkit-background-size: 100%;background-size: 100%;">
+<body style="margin: 0 auto;background-image: url('images/background.jpeg');background-repeat:no-repeat; -webkit-background-size: 100%;background-size: 100%;">
 <div class="content">
     <div class="title">
         <div class="title-left">鲜花购物商城
@@ -25,10 +25,9 @@
         </div>
 
         <div class="title-logo">
-            <img src="./images/title-logo.jpg" alt="和音">
+            <img src="./images/title-logo.png" alt="和音">
         </div>
     </div>
-    <hr style="height: 2px;background-color: black;border: 1px solid black;">
     <form method="post" action="registerHandle.php" role="form" style="width: 300px;margin: 0 auto; margin-top: 60px;">
         <div class="form-group">
             <label class="control-label" for="username">用户名：</label>

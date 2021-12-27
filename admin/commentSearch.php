@@ -38,7 +38,7 @@ $num = mysqli_num_rows($result);
         <th style='width: 5%;'>评论时间</th>
         <th style='width: 5%;'>商品ID</th>
         <th style="width: 5%;">用户名</th>
-        <th style="width: 20%;">评论详情</th>
+        <th style="width: 50%;">评论详情</th>
         <th style="width: 5%;">操作</th>
     </tr>
     </thead>

@@ -36,17 +36,16 @@ $num = mysqli_num_rows($result);
 <table class="table table-bordered table-hover">
     <thead>
     <tr>
-        <th style='width: 6%;'>商品ID</th>
-        <th style='width: 7%;'>商品名称</th>
-        <th style="width: 21%;">商品简介</th>
-        <th style='width: 7%;'>普通价格</th>
-        <th style='width: 7%;'>会员价格</th>
-        <th style='width: 7%;'>商品数量</th>
-        <th style="width: 7%;">已售数量</th>
-        <th style="width: 7%;">规格参数</th>
-        <th style='width: 8%;'>缩略图片</th>
-        <th style="width: 13%;">更新时间</th>
-        <th style="width: 10%;">操作</th>
+        <th style='width: 5%;'>商品ID</th>
+        <th style='width: 5%;'>商品名称</th>
+        <th style="width: 25%;">商品简介</th>
+        <th style='width: 5%;'>普通价格</th>
+        <th style='width: 5%;'>会员价格</th>
+        <th style='width: 5%;'>商品数量</th>
+        <th style="width: 5%;">已售数量</th>
+        <th style='width: 5%;'>缩略图片</th>
+        <th style="width: 9%;">更新时间</th>
+        <th style="width: 7%;">操作</th>
     </tr>
     </thead>
     <tbody style="font-size: 6px;">

@@ -31,6 +31,7 @@ else {
                     echo "<script>alert('该商品信息没有作更改！');window.location.href='goodManager.php';</script>";
             }
             else {
+                echo $updatesql;
                 echo "<script>alert('修改商品信息失败');window.location.href='goodManager.php';</script>";
             }
         }

@@ -50,7 +50,7 @@ if ($user != '') {
             ?>
         </div>
         <div class="col-md-5">
-            <img src="./images/title-logo.jpg" alt="和音">
+            <img src="./images/title-logo.png" alt="和音">
         </div>
         <div class="col-md-3" style="margin-top: 30px;padding-left: 150px;">
             <a class="" href="shoppingCart.php" style="font-size: 15px;text-decoration: none;color: black;">查看购物车
