@@ -11,7 +11,6 @@
     <script src="../scripts/bootstrap.min.js"></script>
     <script src="../scripts/bootstrap.js"></script>
     <script src="../scripts/jquery-3.3.1.min.js"></script>
-    <script src="../scripts/highcharts.js"></script>
 </head>
 <body style="margin: 0 auto;">
 

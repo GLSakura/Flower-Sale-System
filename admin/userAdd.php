@@ -8,7 +8,6 @@ include "header_admin.php";
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li><a href="commentManager.php">评论管理</a></li>
-        <li><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>
 <h4>添加用户信息</h4>

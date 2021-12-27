@@ -14,7 +14,6 @@ if ($result = mysqli_query($coon, $sql)) {
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li><a href="commentManager.php">评论管理</a></li>
-        <li><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>
 <h4>修改用户信息</h4>

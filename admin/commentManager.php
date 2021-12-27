@@ -18,7 +18,6 @@ $num = mysqli_num_rows($result);
         <li><a href="goodManager.php">商品管理</a></li>
         <li><a href="orderManager.php">订单管理</a></li>
         <li class="active"><a href="commentManager.php">评论管理</a></li>
-        <li><a href="soldAnalysis.php">销售分析</a></li>
     </ul>
 </div>
 <form class="navbar-form navbar-right" method="post" action="commentSearch.php">

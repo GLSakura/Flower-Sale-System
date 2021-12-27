@@ -1,11 +1,11 @@
 
-HWeb:TableWithoutCaptionCheck"" Add a description to this table.(éÇ¦”
-g Web:TableHeaderHasIdOrScopeCheck%";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÛãĞá
-g Web:TableHeaderHasIdOrScopeCheck&";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÎäÀÙ
-l Web:TableHeaderHasIdOrScopeCheck'";Add either an 'id' or a 'scope' attribute to this <th> tag.(Í€ïóşÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck(";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÖÜ¨
-l Web:TableHeaderHasIdOrScopeCheck)";Add either an 'id' or a 'scope' attribute to this <th> tag.(œûí†ÿÿÿÿÿ
-l Web:TableHeaderHasIdOrScopeCheck*";Add either an 'id' or a 'scope' attribute to this <th> tag.(«åÌêúÿÿÿÿ
+HWeb:TableWithoutCaptionCheck!" Add a description to this table.(éÇ¦”
+g Web:TableHeaderHasIdOrScopeCheck$";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÛãĞá
+g Web:TableHeaderHasIdOrScopeCheck%";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÎäÀÙ
+l Web:TableHeaderHasIdOrScopeCheck&";Add either an 'id' or a 'scope' attribute to this <th> tag.(Í€ïóşÿÿÿÿ
+g Web:TableHeaderHasIdOrScopeCheck'";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÖÜ¨
+l Web:TableHeaderHasIdOrScopeCheck(";Add either an 'id' or a 'scope' attribute to this <th> tag.(œûí†ÿÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheck)";Add either an 'id' or a 'scope' attribute to this <th> tag.(«åÌêúÿÿÿÿ
 Dphp:S121
 "0Add curly braces around the nested statement(s).(ÔÍØ
-Dphp:S121>"0Add curly braces around the nested statement(s).(ÔÍØ
+Dphp:S121="0Add curly braces around the nested statement(s).(ÔÍØ

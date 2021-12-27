@@ -1,16 +1,16 @@
 
-HWeb:TableWithoutCaptionCheck!" Add a description to this table.(éÇ¦”
-l Web:TableHeaderHasIdOrScopeCheck$";Add either an 'id' or a 'scope' attribute to this <th> tag.(åìËÎÿÿÿÿÿ
-n Web:TableHeaderHasIdOrScopeCheck%";Add either an 'id' or a 'scope' attribute to this <th> tag.(åÌ†Ë8Û˜µŞ/
-n Web:TableHeaderHasIdOrScopeCheck&";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÖÜ¨8Û˜µŞ/
-n Web:TableHeaderHasIdOrScopeCheck'";Add either an 'id' or a 'scope' attribute to this <th> tag.(ó¸ïæ8Û˜µŞ/
-g Web:TableHeaderHasIdOrScopeCheck(";Add either an 'id' or a 'scope' attribute to this <th> tag.(­­‡­
-n Web:TableHeaderHasIdOrScopeCheck)";Add either an 'id' or a 'scope' attribute to this <th> tag.(ôŒ§8²Ñ¥µŞ/
-n Web:TableHeaderHasIdOrScopeCheck*";Add either an 'id' or a 'scope' attribute to this <th> tag.(ûé¦ş8Û˜µŞ/
-s Web:TableHeaderHasIdOrScopeCheck+";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÇıŞÓûÿÿÿÿ8²Ñ¥µŞ/
-n Web:TableHeaderHasIdOrScopeCheck,";Add either an 'id' or a 'scope' attribute to this <th> tag.(ûø¬8³Ñ¥µŞ/
-s Web:TableHeaderHasIdOrScopeCheck-";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ë€¡“øÿÿÿÿ8³Ñ¥µŞ/
-s Web:TableHeaderHasIdOrScopeCheck.";Add either an 'id' or a 'scope' attribute to this <th> tag.(ßğ“Ùùÿÿÿÿ8³Ñ¥µŞ/
+HWeb:TableWithoutCaptionCheck " Add a description to this table.(éÇ¦”
+l Web:TableHeaderHasIdOrScopeCheck#";Add either an 'id' or a 'scope' attribute to this <th> tag.(åìËÎÿÿÿÿÿ
+n Web:TableHeaderHasIdOrScopeCheck$";Add either an 'id' or a 'scope' attribute to this <th> tag.(åÌ†Ë8Û˜µŞ/
+n Web:TableHeaderHasIdOrScopeCheck%";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÖÜ¨8Û˜µŞ/
+n Web:TableHeaderHasIdOrScopeCheck&";Add either an 'id' or a 'scope' attribute to this <th> tag.(ó¸ïæ8Û˜µŞ/
+g Web:TableHeaderHasIdOrScopeCheck'";Add either an 'id' or a 'scope' attribute to this <th> tag.(­­‡­
+n Web:TableHeaderHasIdOrScopeCheck(";Add either an 'id' or a 'scope' attribute to this <th> tag.(ôŒ§8²Ñ¥µŞ/
+n Web:TableHeaderHasIdOrScopeCheck)";Add either an 'id' or a 'scope' attribute to this <th> tag.(ûé¦ş8Û˜µŞ/
+s Web:TableHeaderHasIdOrScopeCheck*";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÇıŞÓûÿÿÿÿ8²Ñ¥µŞ/
+n Web:TableHeaderHasIdOrScopeCheck+";Add either an 'id' or a 'scope' attribute to this <th> tag.(ûø¬8³Ñ¥µŞ/
+s Web:TableHeaderHasIdOrScopeCheck,";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ë€¡“øÿÿÿÿ8³Ñ¥µŞ/
+s Web:TableHeaderHasIdOrScopeCheck-";Add either an 'id' or a 'scope' attribute to this <th> tag.(ßğ“Ùùÿÿÿÿ8³Ñ¥µŞ/
 Dphp:S121
 "0Add curly braces around the nested statement(s).(ÔÍØ
-Dphp:S121G"0Add curly braces around the nested statement(s).(ÔÍØ
+Dphp:S121F"0Add curly braces around the nested statement(s).(ÔÍØ

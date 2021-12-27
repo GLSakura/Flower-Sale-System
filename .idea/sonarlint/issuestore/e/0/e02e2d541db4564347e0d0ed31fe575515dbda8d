@@ -1,9 +1,9 @@
 
-«	php:S2681."•This statement will not be executed conditionally; only the first statement of this 2-statement block will be. The rest will execute unconditionally.(˜ïÔÏ
-h	php:S1192,"TDefine a constant instead of duplicating this literal "selected='selected'" 3 times.(Ø—Ì
-Cphp:S121,"0Add curly braces around the nested statement(s).(Ø—Ì
-Cphp:S121,"0Add curly braces around the nested statement(s).(Ø—Ì
-Iphp:S121-"0Add curly braces around the nested statement(s).(Ëèı®üÿÿÿÿ
-Iphp:S121-"0Add curly braces around the nested statement(s).(Ëèı®üÿÿÿÿ
-Dphp:S121."0Add curly braces around the nested statement(s).(˜ïÔÏ
-Dphp:S121."0Add curly braces around the nested statement(s).(˜ïÔÏ
+«	php:S2681-"•This statement will not be executed conditionally; only the first statement of this 2-statement block will be. The rest will execute unconditionally.(˜ïÔÏ
+h	php:S1192+"TDefine a constant instead of duplicating this literal "selected='selected'" 3 times.(Ø—Ì
+Cphp:S121+"0Add curly braces around the nested statement(s).(Ø—Ì
+Cphp:S121+"0Add curly braces around the nested statement(s).(Ø—Ì
+Iphp:S121,"0Add curly braces around the nested statement(s).(Ëèı®üÿÿÿÿ
+Iphp:S121,"0Add curly braces around the nested statement(s).(Ëèı®üÿÿÿÿ
+Dphp:S121-"0Add curly braces around the nested statement(s).(˜ïÔÏ
+Dphp:S121-"0Add curly braces around the nested statement(s).(˜ïÔÏ
