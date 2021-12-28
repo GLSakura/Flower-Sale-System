@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524b506f-1ea1-48c5-bd37-d1252c96fd10" name="默认的" comment="默认的">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0ffb99ef1bdf81c180b7659b190c7e749ee60edb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29d5d6d434c34655433d86273937e9c75cf84d0e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35a6041ee571ac7c79798a81cbae7af7bd10a324" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/431cc78183beb7519b901116eb4b355393ad35bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4dc19a2e24fcfeee1242de1f0ae2614299b5e8ca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b9fc59b3fafd162e9d477b8bff54d036d2eeeb5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba6b00e2d30eb7f5c01e5b4591441fab7a6b6969" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1eca147dfac0a9b0b60d36eefffc8077e29562e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d156a27623a89e40b053120455c6f88abf0ac92a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d39db871677c079332710977f2f5c74cd2a09123" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e02e2d541db4564347e0d0ed31fe575515dbda8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0d5648ddbfea96996b955ac246bfc3bccc117f2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6d67674fd7d1799024b505473787457526e74c0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIPExplain.php" beforeDir="false" afterPath="$PROJECT_DIR$/VIPExplain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goodDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goodSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/goodSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/cartHandle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/bootstrap-theme.min.css.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +351,8 @@
       <workItem from="1640504931149" duration="8062000" />
       <workItem from="1640574754565" duration="636000" />
       <workItem from="1640614497927" duration="180000" />
-      <workItem from="1640615125884" duration="145000" />
+      <workItem from="1640615125884" duration="447000" />
+      <workItem from="1640703113975" duration="211000" />
     </task>
     <servers />
   </component>

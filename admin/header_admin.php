@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/index-style.css">
     <link rel="stylesheet" href="../styles/allset.css">
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>ƒ
     <script src="../scripts/bootstrap.js"></script>
     <script src="../scripts/jquery-3.3.1.min.js"></script>
 </head>
